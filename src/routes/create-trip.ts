@@ -43,9 +43,9 @@ export async function createTrip(app: FastifyInstance) {
 
       const trip = await prisma.trip.create({
         data: {
-          destination: 'Fortaleza',
-          starts_at: new Date(),
-          ends_at: new Date(),
+          destination,
+          starts_at,
+          ends_at,
           participants: {
             createMany: {
               data: [

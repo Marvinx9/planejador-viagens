@@ -17,7 +17,7 @@ model Trip {
 
   participants Participant[]
   activities Activity[]
-  liks Link[]
+  links Link[]
 
   @@map("trips")
 }
